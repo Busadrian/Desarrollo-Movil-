@@ -1,4 +1,10 @@
 package Proyecto
+
+import com.google.gson.Gson
+import com.google.gson.stream.JsonReader
+import java.io.File
+import java.io.FileReader
+
 fun main(){
     //Lectura del idioma del usuario en el dispositivo
     Texto.LNG = "es"
@@ -44,6 +50,9 @@ fun main(){
     }
 
     println(Texto.texto.getTexto("graciasSalida"))
+
+
+
 }
 
 fun isSalir(texto:String): Boolean{
