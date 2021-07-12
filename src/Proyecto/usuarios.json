@@ -1,0 +1,25 @@
+{
+"personas": [
+  {
+    "nombre": "Daniel",
+    "apellido": "Diego",
+    "edad": 21,
+    "email": "daniel@hotmail",
+    "contrasena": "456DEF"
+  },
+  {
+    "nombre": "José",
+    "apellido": "Cuenca",
+    "edad": 24,
+    "email": "jose@hotmail",
+    "contrasena": "123"
+  },
+  {
+    "nombre": "Josue",
+    "apellido": "Alejandro",
+    "edad": 21,
+    "email": "josue@hotmail",
+    "contrasena": "ABC"
+  }
+]
+}
