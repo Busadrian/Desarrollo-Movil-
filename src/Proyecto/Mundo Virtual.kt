@@ -7,7 +7,7 @@ import java.io.FileReader
 
 fun main(){
     //Lectura del idioma del usuario en el dispositivo
-    Texto.LNG = "es"
+    Texto.LNG = "it"
 
     //Imprimir Saludo
     println(Texto.texto.getTexto("saludo"))
