@@ -2,7 +2,7 @@ package Proyecto
 
 // Clase de Usuario con membresia tipo silver
 // Esta clase solo se crea cuando el usuario free paga la suscripcion
-class UsuariosSilver : Usuarios {
+/*class UsuariosSilver : Usuarios {
 
         //Primer Constructor
         constructor(name: String, apellido: String, edad: Int, email: String, clave: String) : super(
@@ -15,4 +15,4 @@ class UsuariosSilver : Usuarios {
     lateinit var transferencia: OperacionesBancariasSilver
 
 
-}
+} */

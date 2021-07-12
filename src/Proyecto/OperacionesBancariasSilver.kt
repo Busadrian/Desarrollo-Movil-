@@ -1,7 +1,7 @@
 package Proyecto
 
 //Subclase de las operaciones bancarias para los miembros silver
-class OperacionesBancariasSilver : OperacionesBancarias {
+/*class OperacionesBancariasSilver : OperacionesBancarias {
 
     // Cosntructor de la clase OperacionesBancarias
     constructor(correo: String) : super(correo)
@@ -16,4 +16,4 @@ class OperacionesBancariasSilver : OperacionesBancarias {
 
 
 
-}
+}*/

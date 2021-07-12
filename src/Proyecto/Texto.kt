@@ -15,34 +15,25 @@ class Texto: Idiomas {
             "logInInstruccion" to "Ingresa tu Correo y Contraseña. Para salir Ingresa: $salida",
             "logInCorreo" to "Correo: ",
             "logInContrasena" to "Contraseña: ",
-            "logInError" to "El correo/contrasena no coinciden",
+            "logInError" to "El correo/contrasena no coinciden\n",
             "logInOk" to "¡Bienvenido! Disfruta de la App.\n",
             "graciasSalida" to "\n\nNos vemos pronto\n",
             "menu" to "Ingrese la operación que desea realizar:\n1.Consultar Saldo\n2.Depositar\n3.Retirar\nIngrese $salida para salir",
             "bancaError" to "¡Operación Incorrecta!\n",
-            "bancaSaldo" to "\n*****Tus fondos son %.2f pesos*****\n",
+            "bancaSaldo" to "\nTus fondos son %.2f pesos\n",
             "bancaDeposito" to "\n¿Cuánto Desea Depositar?\nMonto: ",
-            "bancaDepositoOk" to "*****¡Deposito exitoso!*****",
+            "bancaDepositoOk" to "¡Deposito exitoso!\n",
             "bancaRetiroError" to "*****Fondos insuficientes*****",
-            "bancaRetiroOk" to "*****Retiro exitoso*****",
-            "bancaRetiro" to "¿Cuánto desea retirar?\nMonto: "
-        )
-        texto["en"] = mutableMapOf(
-            "saludo" to "Welcome to the PowerFull App Fintech!",
-            "logInInstruccion" to "Type your email and password. To Go Out Type: $salida",
-            "logInCorreo" to "Email: ",
-            "logInContrasena" to "Password: ",
-            "logInError" to "The email/password are wrong",
-            "logInOk" to "Welcome! Enjoy the App.\n",
-            "graciasSalida" to "\n\nSee You\n",
-            "menu" to "Type your operation:\n1.Check Balance\n2.Save Money\n3.Withdraw\nType $salida to exit",
-            "bancaError" to "Wrong Operation!\n",
-            "bancaSaldo" to "\n*****Your Balance is %.2f pesos*****\n",
-            "bancaDeposito" to "\nHow much money do you want to save?\nMoney: ",
-            "bancaDepositoOk" to "*****Save Ok!*****",
-            "bancaRetiroError" to "*****Not Enough Money*****",
-            "bancaRetiroOk" to "*****Withdraw Ok*****",
-            "bancaRetiro" to "How much do you want to withdraw?\nMoney: "
+            "bancaRetiroOk" to "Retiro exitoso\n",
+            "bancaRetiro" to "¿Cuánto desea retirar?\nMonto: ",
+            "quemembresia" to "De que membresia quieres conocer el precio? \n Membresia:",
+            "ingresapago" to "Inserta tu pago de la membresia",
+            "suscripción" to "¿Deseas suscribirte a la membresia Silver?\n",
+            "transferencia" to "¿Cuanto quieres transferir? \n Cantidad:\n",
+            "tipomembresia" to "¿Que tipo de memebresia tienes? \n Membresia:\n",
+            "cuentabancaria" to "¿A que cuentabancaria quieres transferir? \n Cuentabancaria:\n",
+            "cerrarsesion" to "¿Quiere cerrar su sesión?: "
+
         )
     }
 
