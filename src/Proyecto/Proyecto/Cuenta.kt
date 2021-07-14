@@ -2,13 +2,11 @@ package Proyecto
 
 import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf
 
-// Acciones de las cuentas
+
 open class Cuenta {
 
-    companion object {
+    companion object tarjeta{
 
-    // la creacion de cuenta, la creacion de usuario ya esta pero tenemos que crear una cuenta ya
-    // cuando el usuario exista
     var membresia: String = "Free"}
 
 
@@ -16,6 +14,7 @@ open class Cuenta {
         return println("Tu membresia es $membresia")
     }
 
+    // Imprimrir el costo que tiene cada memebresia
     fun getcostomembresia() {
         println("Actualmente tenemos solo la membresia Silver.")
         print(Texto.texto.getTexto("quemembresia"))
@@ -28,19 +27,23 @@ open class Cuenta {
 
     }
 
-    // quiero que el chequeo se haga sin verificar fondos y que le reste a fondos
-    // Todavi se podria autmatizar mas
+    // Cambio de Membresia
     fun setMembresia() {
-        if (Cuenta.membresia == "Silver") println("Tu membresia ya es Silver")
-        else if (Cuenta.membresia == "Free") {
-            print(Texto.texto.getTexto("suscripción"))
-            var decision = readLine().toString().trim()
-            when(decision){
+        println("Iniciando proceso para de suscipcion")
+        Thread.sleep(3000)
+
+        print(Texto.texto.getTexto("suscripción"))
+        var decision = readLine().toString().trim()
+        when(decision){
                 "Si" -> {
+                    Thread.sleep(2000)
+                    print("Ingresa tu pago: ")
+                    var pago = readLine()!!.toInt()
+
+                    Thread.sleep(2000)
                     println("Procesando tu pago")
                     Thread.sleep(2000)
-                    if (OperacionesBancarias.fondos >= 1000 ) {
-                        OperacionesBancarias.fondos -= 1000
+                    if (pago >= 1000 ) {
                         membresia = "Silver"
                         println("Tu pago fue exitoso tu cuenta ahora es $membresia")}
                     else println("Tu transacción no se puede realizar por falta de fondos realiza un deposito")
@@ -54,5 +57,5 @@ open class Cuenta {
 
     }
 
-}
+
 

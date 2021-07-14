@@ -4,7 +4,7 @@ import java.util.Date
 import java.text.SimpleDateFormat
 
 
-// Operaciones bancarias que una cuenta free puede acceder
+// Classe de las operaciones financiera
 
 open class OperacionesBancarias {
 
@@ -19,7 +19,7 @@ open class OperacionesBancarias {
         }
     }*/
 
-    companion object   {
+    companion object  {
         // Se hace el parametro publico para el companion
         var fondos: Double = 0.0
     }
@@ -27,6 +27,7 @@ open class OperacionesBancarias {
     protected var fondos: Double = 0.0
 
 
+    // Funcion para ingresar dinero a la cuenta
     fun depositar() {
         print(Texto.texto.getTexto("bancaDeposito"))
         fondos += readLine().toString().toDouble()
@@ -35,6 +36,7 @@ open class OperacionesBancarias {
         return println(Texto.texto.getTexto("bancaDepositoOk")!!)
     }
 
+    // Una dismiucion de efectivo por retiro
     fun retirar(){
         print(Texto.texto.getTexto("bancaRetiro")) // espacio
         var monto = readLine().toString().toDouble()
@@ -61,6 +63,9 @@ open class OperacionesBancarias {
         return println(resp)
     }
 
+
+
+    // Regresa los fondos del usuario
     fun obtenerFondos() {
         println("Obteniendo tus fondos ")
 
@@ -68,7 +73,7 @@ open class OperacionesBancarias {
         return println(Texto.texto.getTexto("bancaSaldo")!!.format(fondos)) // no imprime el valor
     }
 
-
+    // Funcion para hacer la transferencia que verifica que tipo de memebresia tiene
     fun transferencia ()  {
 
 
